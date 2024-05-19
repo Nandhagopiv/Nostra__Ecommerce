@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,48 +10,83 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <nav class="sticky top-0 z-10 shadow-2xl">
         <section id="off--sec" class="bg-gray-900 p-2 text-white flex justify-center items-center gap-2 relative">
             <h1 class="font-semibold">Sign up and Get 20% Offer on your first Order</h1>
-            <h1 id="x" class="font-bold m-1 sm:mr-3 ml-2 cursor-pointer text-gray-300 hover:text-white absolute right-2">X</h1>
+            <h1 id="x"
+                class="font-bold m-1 sm:mr-3 sm:right-2 cursor-pointer text-gray-300 hover:text-white absolute right-1">
+                X</h1>
         </section>
         <main class="flex justify-between items-center bg-white">
             <div>
                 <h1 class="text-2xl font-bold m-2 ml-5">Nostra</h1>
             </div>
             <div class="md:flex hidden gap-5 m-2">
-                <a href="index.html"><p>Home</p></a>
+                <a href="index.html">
+                    <p>Home</p>
+                </a>
                 <p>New Arrivals</p>
                 <p>Most Wanted</p>
-                <a href="product.html"><p>All Collections</p></a>
-                <a href="contact.html"><p>Contact Us</p></a>
+                <a href="product.html">
+                    <p>All Collections</p>
+                </a>
+                <a href="contact.html">
+                    <p>Contact Us</p>
+                </a>
             </div>
             <div class="md:hidden">
-                <i class="fa-solid fa-bars mr-5" style="color: #000000;"></i>
+                <i id="menubar" class="fa-solid fa-bars mr-5" style="color: #000000;"></i>
             </div>
         </main>
     </nav>
+    <sidenav id="sidenav" style="height: 100%;width: 50%;"
+        class="bg-gray-900 transition-all duration-1000 md:hidden shadow-2xl p-10 flex flex-col gap-5 -right-80 text-white fixed top-0 z-30">
+        <h1 id="sidenav__x" class="absolute cursor-pointer right-5 top-5 font-bold">X</h1>
+        <a href="index.html">
+            <p class="mt-5">Home</p>
+        </a>
+        <p>New Arrivals</p>
+        <p>Most Wanted</p>
+        <a href="product.html">
+            <p>All Collections</p>
+        </a>
+        <a href="contact.html">
+            <p>Contact Us</p>
+        </a>
+    </sidenav>
     <section class="bg-white">
         <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
             <h2 class="mb-4 text-4xl font-extrabold text-center">Contact Us</h2>
-            <p class="mb-8 lg:mb-16 font-light text-center  sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
+            <p class="mb-8 lg:mb-16 font-light text-center  sm:text-xl">Got a technical issue? Want to send feedback
+                about a beta feature? Need details about our Business plan? Let us know.</p>
             <form action="#" class="space-y-8">
                 <div>
                     <label for="email" class="block mb-2 text-sm font-medium">Your email</label>
-                    <input type="email" id="email" class="shadow-sm  text-sm border border-black focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5" placeholder="name@flowbite.com" required>
+                    <input type="email" id="email"
+                        class="shadow-sm  text-sm border border-black focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+                        placeholder="name@flowbite.com" required>
                 </div>
                 <div>
                     <label for="subject" class="block mb-2 text-sm font-medium">Subject</label>
-                    <input type="text" id="subject" class="block p-3 w-full text-sm  shadow-sm border border-black focus:ring-primary-500 focus:border-primary-500" placeholder="Let us know how we can help you" required>
+                    <input type="text" id="subject"
+                        class="block p-3 w-full text-sm  shadow-sm border border-black focus:ring-primary-500 focus:border-primary-500"
+                        placeholder="Let us know how we can help you" required>
                 </div>
                 <div class="sm:col-span-2">
                     <label for="message" class="block mb-2 text-sm font-medium ">Your message</label>
-                    <textarea id="message" rows="6" class="block p-2.5 w-full text-sm focus:ring-primary-500 border border-black focus:border-primary-500 " placeholder="Leave a comment..."></textarea>
+                    <textarea id="message" rows="6"
+                        class="block p-2.5 w-full text-sm focus:ring-primary-500 border border-black focus:border-primary-500 "
+                        placeholder="Leave a comment..."></textarea>
                 </div>
-                <button type="submit" class="py-3 px-5 text-sm font-medium text-center bg-black text-white rounded-xl bg-primary-700 sm:w-fit hover:bg-primary-800 focus:outline-none ">Send message</button>
+                <button type="submit"
+                    class="py-3 px-5 text-sm font-medium text-center bg-black text-white rounded-xl bg-primary-700 sm:w-fit hover:bg-primary-800 focus:outline-none ">Send
+                    message</button>
             </form>
         </div>
-      </section>
+    </section>
+    <script src="contact.js"></script>
 </body>
+
 </html>

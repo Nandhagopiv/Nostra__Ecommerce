@@ -35,10 +35,25 @@
                 </a>
             </div>
             <div class="md:hidden">
-                <i class="fa-solid fa-bars mr-5" style="color: #000000;"></i>
+                <i id="menubar" class="fa-solid fa-bars mr-5" style="color: #000000;"></i>
             </div>
         </main>
     </nav>
+    <sidenav id="sidenav" style="height: 100%;width: 50%;"
+        class="bg-gray-900 transition-all duration-1000 md:hidden shadow-2xl p-10 flex flex-col gap-5 -right-80 text-white fixed top-0 z-30">
+        <h1 id="sidenav__x" class="absolute cursor-pointer right-5 top-5 font-bold">X</h1>
+        <a href="index.html">
+            <p class="mt-5">Home</p>
+        </a>
+        <p>New Arrivals</p>
+        <p>Most Wanted</p>
+        <a href="product.html">
+            <p>All Collections</p>
+        </a>
+        <a href="contact.html">
+            <p>Contact Us</p>
+        </a>
+    </sidenav>
     <section class="relative">
         <div style="scrollbar-width: none;" class="flex overflow-hidden">
             <img id="poster1" class="w-4/4 md:w-3/6" src="./Images/poster (1).jpg">
@@ -47,8 +62,12 @@
             <img id="poster4" class="w-4/4 md:w-3/6" src="./Images/poster (4).jpg">
             <img id="poster5" class="w-4/4 md:w-3/6" src="./Images/poster (5).jpg">
             <div>
-                <img style="top: 45%;" id="nextbtn" class="absolute right-10 md:top-2/4 h-10 md:h-20 rounded-full shadow-2xl" src="./Images/next.png" alt="">
-                <img style="top: 45%;" id="backbtn" class="absolute left-10 md:top-2/4 h-10 md:h-20 rounded-full shadow-2xl" src="./Images/back.png" alt="">
+                <img style="top: 45%;" id="nextbtn"
+                    class="absolute right-10 md:top-2/4 h-10 md:h-20 rounded-full shadow-2xl" src="./Images/next.png"
+                    alt="">
+                <img style="top: 45%;" id="backbtn"
+                    class="absolute left-10 md:top-2/4 h-10 md:h-20 rounded-full shadow-2xl" src="./Images/back.png"
+                    alt="">
             </div>
         </div>
     </section>
@@ -58,49 +77,49 @@
         </div>
         <section class="sm:grid-cols-3 lg:flex md:grid-cols-4 justify-around text-2xl font-semibold grid grid-cols-2">
             <div class="m-5 text-center">
-                <svg class="h-24 m-2 inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <svg class="h-12 md:h-24 m-2 inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                     <path fill="#000000"
                         d="M61.7 169.4l101.5 278C92.2 413 43.3 340.2 43.3 256c0-30.9 6.6-60.1 18.4-86.6zm337.9 75.9c0-26.3-9.4-44.5-17.5-58.7-10.8-17.5-20.9-32.4-20.9-49.9 0-19.6 14.8-37.8 35.7-37.8 .9 0 1.8 .1 2.8 .2-37.9-34.7-88.3-55.9-143.7-55.9-74.3 0-139.7 38.1-177.8 95.9 5 .2 9.7 .3 13.7 .3 22.2 0 56.7-2.7 56.7-2.7 11.5-.7 12.8 16.2 1.4 17.5 0 0-11.5 1.3-24.3 2l77.5 230.4L249.8 247l-33.1-90.8c-11.5-.7-22.3-2-22.3-2-11.5-.7-10.1-18.2 1.3-17.5 0 0 35.1 2.7 56 2.7 22.2 0 56.7-2.7 56.7-2.7 11.5-.7 12.8 16.2 1.4 17.5 0 0-11.5 1.3-24.3 2l76.9 228.7 21.2-70.9c9-29.4 16-50.5 16-68.7zm-139.9 29.3l-63.8 185.5c19.1 5.6 39.2 8.7 60.1 8.7 24.8 0 48.5-4.3 70.6-12.1-.6-.9-1.1-1.9-1.5-2.9l-65.4-179.2zm183-120.7c.9 6.8 1.4 14 1.4 21.9 0 21.6-4 45.8-16.2 76.2l-65 187.9C426.2 403 468.7 334.5 468.7 256c0-37-9.4-71.8-26-102.1zM504 256c0 136.8-111.3 248-248 248C119.2 504 8 392.7 8 256 8 119.2 119.2 8 256 8c136.7 0 248 111.2 248 248zm-11.4 0c0-130.5-106.2-236.6-236.6-236.6C125.5 19.4 19.4 125.5 19.4 256S125.6 492.6 256 492.6c130.5 0 236.6-106.1 236.6-236.6z" />
                 </svg>
                 <p>Puma</p>
             </div>
             <div class="m-5 text-center">
-                <svg class="h-24 m-2 inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <svg class="h-12 md:h-24 m-2 inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                     <path
                         d="M94.1 315.1c0 25.9-21.2 47.1-47.1 47.1S0 341 0 315.1c0-25.9 21.2-47.1 47.1-47.1h47.1v47.1zm23.7 0c0-25.9 21.2-47.1 47.1-47.1s47.1 21.2 47.1 47.1v117.8c0 25.9-21.2 47.1-47.1 47.1s-47.1-21.2-47.1-47.1V315.1zm47.1-189c-25.9 0-47.1-21.2-47.1-47.1S139 32 164.9 32s47.1 21.2 47.1 47.1v47.1H164.9zm0 23.7c25.9 0 47.1 21.2 47.1 47.1s-21.2 47.1-47.1 47.1H47.1C21.2 244 0 222.8 0 196.9s21.2-47.1 47.1-47.1H164.9zm189 47.1c0-25.9 21.2-47.1 47.1-47.1 25.9 0 47.1 21.2 47.1 47.1s-21.2 47.1-47.1 47.1h-47.1V196.9zm-23.7 0c0 25.9-21.2 47.1-47.1 47.1-25.9 0-47.1-21.2-47.1-47.1V79.1c0-25.9 21.2-47.1 47.1-47.1 25.9 0 47.1 21.2 47.1 47.1V196.9zM283.1 385.9c25.9 0 47.1 21.2 47.1 47.1 0 25.9-21.2 47.1-47.1 47.1-25.9 0-47.1-21.2-47.1-47.1v-47.1h47.1zm0-23.7c-25.9 0-47.1-21.2-47.1-47.1 0-25.9 21.2-47.1 47.1-47.1h117.8c25.9 0 47.1 21.2 47.1 47.1 0 25.9-21.2 47.1-47.1 47.1H283.1z" />
                 </svg>
                 <p>Adidas</p>
             </div>
             <div class="m-5 text-center">
-                <svg class="h-24 m-2 inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512">
+                <svg class="h-12 md:h-24 m-2 inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512">
                     <path fill="#000000"
                         d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z" />
                 </svg>
                 <p>Simple</p>
             </div>
             <div class="m-5 text-center">
-                <svg class="h-24 m-2 inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <svg class="h-12 md:h-24 m-2 inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                     <path fill="#000000"
                         d="M223.7 141.1 167 284.2 111 141.1H14.9L120.8 390.2 82.2 480h94.2L317.3 141.1zm105.4 135.8a58.2 58.2 0 1 0 58.2 58.2A58.2 58.2 0 0 0 329.1 276.9zM394.7 32l-93 223.5H406.4L499.1 32z" />
                 </svg>
                 <p>Leaves</p>
             </div>
             <div class="m-5 text-center">
-                <svg class="h-24 m-2 inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <svg class="h-12 md:h-24 m-2 inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                     <path fill="#000000"
                         d="M502.9 266v69.7c0 62.1-50.3 112.4-112.4 112.4-61.8 0-112.4-49.8-112.4-111.3v-70.2l34.3 16 51.1-15.2V338c0 14.7 12 26.5 26.7 26.5S417 352.7 417 338v-72h85.9zm-224.7-58.2l34.3 16 51.1-15.2V173c0-60.5-51.1-109-112.1-109-60.8 0-112.1 48.2-112.1 108.2v162.4c0 14.9-12 26.7-26.7 26.7S86 349.5 86 334.6V266H0v69.7C0 397.7 50.3 448 112.4 448c61.6 0 112.4-49.5 112.4-110.8V176.9c0-14.7 12-26.7 26.7-26.7s26.7 12 26.7 26.7v30.9z" />
                 </svg>
                 <p>Behance</p>
             </div>
             <div class="m-5 text-center">
-                <svg class="h-24 m-2 inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <svg class="h-12 md:h-24 m-2 inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                     <path fill="#000000"
                         d="M81.7 172.3H0v174.4h132.7V96h-51v76.3zm0 133.4H50.9v-92.3h30.8v92.3zm297.2-133.4v174.4h81.8v28.5h-81.8V416H512V172.3H378.9zm81.8 133.4h-30.8v-92.3h30.8v92.3zm-235.6 41h82.1v28.5h-82.1V416h133.3V172.3H225.1v174.4zm51.2-133.3h30.8v92.3h-30.8v-92.3zM153.3 96h51.3v51h-51.3V96zm0 76.3h51.3v174.4h-51.3V172.3z" />
                 </svg>
                 <p>Twitch</p>
             </div>
             <div class="m-5 text-center">
-                <svg class="h-24 m-2 inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <svg class="h-12 md:h-24 m-2 inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                     <path fill="#000000"
                         d="M.6 92.1C.6 58.8 27.4 32 60.4 32c30 0 54.5 21.9 59.2 50.2 32.6-7.6 67.1 .6 96.5 30l-44.3 44.3c-20.5-20.5-42.6-16.3-55.4-3.5-14.3 14.3-14.3 37.9 0 52.2l99.5 99.5-44 44.3c-87.7-87.2-49.7-49.7-99.8-99.7-26.8-26.5-35-64.8-24.8-98.9C20.4 144.6 .6 120.7 .6 92.1zm129.5 116.4l44.3 44.3c10-10 89.7-89.7 99.7-99.8 14.3-14.3 37.6-14.3 51.9 0 12.8 12.8 17 35-3.5 55.4l44 44.3c31.2-31.2 38.5-67.6 28.9-101.2 29.2-4.1 51.9-29.2 51.9-59.5 0-33.2-26.8-60.1-59.8-60.1-30.3 0-55.4 22.5-59.5 51.6-33.8-9.9-71.7-1.5-98.3 25.1-18.3 19.1-71.1 71.5-99.6 99.9zm266.3 152.2c8.2-32.7-.9-68.5-26.3-93.9-11.8-12.2 5 4.7-99.5-99.7l-44.3 44.3 99.7 99.7c14.3 14.3 14.3 37.6 0 51.9-12.8 12.8-35 17-55.4-3.5l-44 44.3c27.6 30.2 68 38.8 102.7 28 5.5 27.4 29.7 48.1 58.9 48.1 33 0 59.8-26.8 59.8-60.1 0-30.2-22.5-55-51.6-59.1zm-84.3-53.1l-44-44.3c-87 86.4-50.4 50.4-99.7 99.8-14.3 14.3-37.6 14.3-51.9 0-13.1-13.4-16.9-35.3 3.2-55.4l-44-44.3c-30.2 30.2-38 65.2-29.5 98.3-26.7 6-46.2 29.9-46.2 58.2C0 453.2 26.8 480 59.8 480c28.6 0 52.5-19.8 58.6-46.7 32.7 8.2 68.5-.6 94.2-26 32.1-32 12.2-12.4 99.5-99.7z" />
                 </svg>
@@ -145,75 +164,76 @@
             </div>
         </div>
     </section>
-<main>
-    <div>
-        <h1 class="text-2xl font-bold m-5">Most Wanted</h1>
-    </div>
-    <section style="scrollbar-width: none;" class="flex overflow-x-auto m-5 hide-scroll-bar">
-        <div class="flex gap-5">
-            <div class="w-64 h-80 overflow-hidden relative">
-                <img style="height: 100%; width: 100%;" src="./Images/Most--wanted (1).jpg" alt="">
-                <img class="absolute left-20 bottom-5 h-20" src="./Images/sale-tag.png" alt="">
+    <main>
+        <div>
+            <h1 class="text-2xl font-bold m-5">Most Wanted</h1>
+        </div>
+        <section style="scrollbar-width: none;" class="flex overflow-x-auto m-5 hide-scroll-bar">
+            <div class="flex gap-5">
+                <div class="w-64 h-80 overflow-hidden relative">
+                    <img style="height: 100%; width: 100%;" src="./Images/Most--wanted (1).jpg" alt="">
+                    <img class="absolute left-20 bottom-5 h-20" src="./Images/sale-tag.png" alt="">
+                </div>
+                <div class="w-64 h-80  overflow-hidden relative">
+                    <img style="height: 100%; width: 100%;" src="./Images/Most--wanted (2).jpg" alt="">
+                    <img class="absolute left-20 bottom-5 h-20" src="./Images/sale-tag.png" alt="">
+                </div>
+                <div class="w-64 h-80  overflow-hidden relative">
+                    <img style="height: 100%; width: 100%;" src="./Images/Most--wanted (3).jpg" alt="">
+                    <img class="absolute left-20 bottom-5 h-20" src="./Images/sale-tag.png" alt="">
+                </div>
+                <div class="w-64 h-80  overflow-hidden relative">
+                    <img style="height: 100%; width: 100%;" src="./Images/Most--wanted (10).jpg" alt="">
+                    <img class="absolute left-20 bottom-5 h-20" src="./Images/sale-tag.png" alt="">
+                </div>
+                <div class="w-64 h-80  overflow-hidden relative">
+                    <img style="height: 100%; width: 100%;" src="./Images/Most--wanted (8).jpg" alt="">
+                    <img class="absolute left-20 bottom-5 h-20" src="./Images/sale-tag.png" alt="">
+                </div>
+                <div class="w-64 h-80  overflow-hidden relative">
+                    <img style="height: 100%; width: 100%;" src="./Images/Most--wanted (4).jpg" alt="">
+                    <img class="absolute left-20 bottom-5 h-20" src="./Images/sale-tag.png" alt="">
+                </div>
+                <div class="w-64 h-80  overflow-hidden relative">
+                    <img style="height: 100%; width: 100%;" src="./Images/Most--wanted (5).jpg" alt="">
+                    <img class="absolute left-20 bottom-5 h-20" src="./Images/sale-tag.png" alt="">
+                </div>
+                <div class="w-64 h-80  overflow-hidden relative">
+                    <img style="height: 100%; width: 100%;" src="./Images/Most--wanted (9).jpg" alt="">
+                    <img class="absolute left-20 bottom-5 h-20" src="./Images/sale-tag.png" alt="">
+                </div>
+                <div class="w-64 h-80 overflow-hidden relative">
+                    <img style="height: 100%; width: 100%;" src="./Images/Most--wanted (7).jpg" alt="">
+                    <img class="absolute left-20 bottom-5 h-20" src="./Images/sale-tag.png" alt="">
+                </div>
+                <div class="w-64 h-80  overflow-hidden relative">
+                    <img style="height: 100%; width: 100%;" src="./Images/Most--wanted (6).jpg" alt="">
+                    <img class="absolute left-20 bottom-5 h-20" src="./Images/sale-tag.png" alt="">
+                </div>
+                <div class="w-64 h-80  overflow-hidden relative">
+                    <img style="height: 100%; width: 100%;" src="./Images/New--arrival (3).jpg" alt="">
+                    <img class="absolute left-20 bottom-5 h-20" src="./Images/sale-tag.png" alt="">
+                </div>
             </div>
-            <div class="w-64 h-80  overflow-hidden relative">
-                <img style="height: 100%; width: 100%;" src="./Images/Most--wanted (2).jpg" alt="">
-                <img class="absolute left-20 bottom-5 h-20" src="./Images/sale-tag.png" alt="">
-            </div>
-            <div class="w-64 h-80  overflow-hidden relative">
-                <img style="height: 100%; width: 100%;" src="./Images/Most--wanted (3).jpg" alt="">
-                <img class="absolute left-20 bottom-5 h-20" src="./Images/sale-tag.png" alt="">
-            </div>
-            <div class="w-64 h-80  overflow-hidden relative">
-                <img style="height: 100%; width: 100%;" src="./Images/Most--wanted (10).jpg" alt="">
-                <img class="absolute left-20 bottom-5 h-20" src="./Images/sale-tag.png" alt="">
-            </div>
-            <div class="w-64 h-80  overflow-hidden relative">
-                <img style="height: 100%; width: 100%;" src="./Images/Most--wanted (8).jpg" alt="">
-                <img class="absolute left-20 bottom-5 h-20" src="./Images/sale-tag.png" alt="">
-            </div>
-            <div class="w-64 h-80  overflow-hidden relative">
-                <img style="height: 100%; width: 100%;" src="./Images/Most--wanted (4).jpg" alt="">
-                <img class="absolute left-20 bottom-5 h-20" src="./Images/sale-tag.png" alt="">
-            </div>
-            <div class="w-64 h-80  overflow-hidden relative">
-                <img style="height: 100%; width: 100%;" src="./Images/Most--wanted (5).jpg" alt="">
-                <img class="absolute left-20 bottom-5 h-20" src="./Images/sale-tag.png" alt="">
-            </div>
-            <div class="w-64 h-80  overflow-hidden relative">
-                <img style="height: 100%; width: 100%;" src="./Images/Most--wanted (9).jpg" alt="">
-                <img class="absolute left-20 bottom-5 h-20" src="./Images/sale-tag.png" alt="">
-            </div>
-            <div class="w-64 h-80 overflow-hidden relative">
-                <img style="height: 100%; width: 100%;" src="./Images/Most--wanted (7).jpg" alt="">
-                <img class="absolute left-20 bottom-5 h-20" src="./Images/sale-tag.png" alt="">
-            </div>
-            <div class="w-64 h-80  overflow-hidden relative">
-                <img style="height: 100%; width: 100%;" src="./Images/Most--wanted (6).jpg" alt="">
-                <img class="absolute left-20 bottom-5 h-20" src="./Images/sale-tag.png" alt="">
-            </div>
-            <div class="w-64 h-80  overflow-hidden relative">
-                <img style="height: 100%; width: 100%;" src="./Images/New--arrival (3).jpg" alt="">
-                <img class="absolute left-20 bottom-5 h-20" src="./Images/sale-tag.png" alt="">
-            </div>
+        </section>
+    </main>
+    <section class="p-10 mt-10 mb-10 bg-orange-800 grid md:grid-cols-2 text-white">
+        <div>
+            <img src="./Images/footer--img.jpg" alt="">
+        </div>
+        <div style="height: 100%;" class="flex justify-center flex-col gap-5 m-5">
+            <h1 class="text-5xl font-bold">Limited Offer</h1>
+            <p class="text-3xl">35% OFF on this for Limited Customer</p>
+            <button class="p-3 rounded-md text-black bg-white font-extrabold w-2/6 md:w-1/6">Shop Now</button>
         </div>
     </section>
-</main>
-<section class="p-10 mt-10 mb-10 bg-orange-800 grid md:grid-cols-2 text-white">
-    <div>
-        <img src="./Images/footer--img.jpg" alt="">
-    </div>
-    <div style="height: 100%;" class="flex justify-center flex-col gap-5 m-5">
-        <h1 class="text-5xl font-bold">Limited Offer</h1>
-        <p class="text-3xl">35% OFF on this for Limited Customer</p>
-        <button class="p-3 rounded-md text-black bg-white font-extrabold w-2/6 md:w-1/6">Shop Now</button>
-    </div>
-</section>
-    
+
     <footer class="text-center flex flex-col items-center gap-3 m-10">
         <h1 class="inline text-3xl font-bold">Join our News Letter</h1>
         <p class="inline text-2xl mb-5">Sign Up for our email Newspaper to get exclusive discounts, updates and more</p>
         <input class="border border-black w-3/4 p-2" placeholder="Enter username">
-        <button class="border border-black rounded-md bg-black text-white font-bold w-2/6 md:w-1/12 p-2">Subscribe</button>
+        <button
+            class="border border-black rounded-md bg-black text-white font-bold w-2/6 md:w-1/12 p-2">Subscribe</button>
     </footer>
     <script src="script.js"></script>
 </body>
