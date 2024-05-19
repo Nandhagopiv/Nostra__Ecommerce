@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <nav class="sticky top-0 z-10 shadow-2xl">
         <section id="off--sec" class="bg-gray-900 p-2 text-white flex justify-center items-center gap-2 relative">
@@ -19,23 +21,158 @@
             <div>
                 <h1 class="text-2xl font-bold m-2 ml-5">Nostra</h1>
             </div>
-            <div class="flex gap-5 m-2">
-                <a href="index.html"><p>Home</p></a>
+            <div class="md:flex hidden gap-5 m-2">
+                <a href="index.html">
+                    <p>Home</p>
+                </a>
                 <p>New Arrivals</p>
                 <p>Most Wanted</p>
-                <a href="product.html"><p>All Collections</p></a>
-                <a href="contact.html"><p>Contact Us</p></a>
+                <a href="product.html">
+                    <p>All Collections</p>
+                </a>
+                <a href="contact.html">
+                    <p>Contact Us</p>
+                </a>
+            </div>
+            <div class="md:hidden">
+                <i class="fa-solid fa-bars mr-5" style="color: #000000;"></i>
             </div>
         </main>
     </nav>
-    
-<form class="max-w-md mt-10 mx-auto"> 
-    <div class="relative">
-        <input type="search" id="default-search" class="block w-full p-4 ps-10 text-sm focus:outline-none text-gray-900 border border-gray-300 rounded-lg bg-gray-50  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="Search Mockups, Logos..." required />
-        <button type="submit" class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700">Search</button>
-    </div>
-</form>
-
-    
+    <main class="flex ml-0">
+        <div class="w-1/4 flex-col gap-5 pt-10 pl-10 sticky lg:flex hidden top-10 shadow-2xl">
+            <div class="flex flex-col gap-5">
+                <h1 class="font-bold text-4xl">Occasions</h1>
+                <div>
+                    <table>
+                        <tr>
+                            <td class="flex gap-3"><input type="checkbox">
+                                <P class="inline text-2xl">Summer</P>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="flex gap-3"><input type="checkbox">
+                                <P class="inline text-2xl">Party</P>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="flex gap-3"><input type="checkbox">
+                                <p class="inline text-2xl">Beach</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="flex flex-col gap-5">
+                <h1 class="font-bold text-4xl">Colors</h1>
+                <div>
+                    <table>
+                        <tr>
+                            <td class="flex gap-3"><input type="checkbox">
+                                <P class="inline text-2xl">Black</P>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="flex gap-3"><input type="checkbox">
+                                <P class="inline text-2xl">White</P>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="flex gap-3"><input type="checkbox">
+                                <P class="inline text-2xl">Red</P>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="flex gap-3"><input type="checkbox">
+                                <P class="inline text-2xl">Blue</P>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="flex gap-3"><input type="checkbox">
+                                <P class="inline text-2xl">Yellow</P>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="flex gap-3"><input type="checkbox">
+                                <P class="inline text-2xl">Green</P>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="flex flex-col gap-5">
+                <h1 class="font-bold text-4xl">Arrivals</h1>
+                <div>
+                    <table>
+                        <tr>
+                            <td class="flex gap-3"><input type="checkbox">
+                                <P class="inline text-2xl">New</P>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="flex gap-3"><input type="checkbox">
+                                <P class="inline text-2xl">Old</P>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col items-center sm:m-10  m-2 mt-10" style="width: 100%;">
+            <div class="flex w-11/12 border border-black rounded-full items-center gap-2">
+                <svg id="searchicon" class="h-5 ml-3 cursor-pointer" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512">
+                    <path fill="#000000"
+                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                </svg>
+                <input id="search" style="width: 90%;" class="p-2 pl-2 rounded-3xl focus:outline-none"
+                    placeholder="Search for Products">
+            </div>
+            <div id="allproducts" class="m-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 md:grid-cols-4 gap-5">
+                <div>
+                    <img style="width: 100%;" src="./Images/All-collections (1).jpg" alt="">
+                    <h1 class="text-2xl font-semibold">Olive Green Denim Jean</h1>
+                    <p class="text-xl font-bold mt-2">$99</p>
+                </div>
+                <div>
+                    <img style="width: 100%;" src="./Images/All-collections (2).jpg" alt="">
+                    <h1 class="text-2xl font-semibold">Women Light Blue Jean</h1>
+                    <p class="text-xl font-bold mt-2">$49</p>
+                </div>
+                <div>
+                    <img style="width: 100%;" src="./Images/All-collections (3).jpg" alt="">
+                    <h1 class="text-2xl font-semibold">Women Striped Pant</h1>
+                    <p class="text-xl font-bold mt-2">$69</p>
+                </div>
+                <div>
+                    <img style="width: 100%;" src="./Images/All-collections (4).jpg" alt="">
+                    <h1 class="text-2xl font-semibold">Dark Blue Denim Jean</h1>
+                    <p class="text-xl font-bold mt-2">$129</p>
+                </div>
+                <div>
+                    <img style="width: 100%;" src="./Images/All-collections (5).jpg" alt="">
+                    <h1 class="text-2xl font-semibold">Formal Light Blue Shirt</h1>
+                    <p class="text-xl font-bold mt-2">$149</p>
+                </div>
+                <div>
+                    <img style="width: 100%;" src="./Images/All-collections (6).jpg" alt="">
+                    <h1 class="text-2xl font-semibold">Mustard Orange Full Sleeve Tshirt</h1>
+                    <p class="text-xl font-bold mt-2">$89</p>
+                </div>
+                <div>
+                    <img style="width: 100%;" src="./Images/All-collections (7).jpg" alt="">
+                    <h1 class="text-2xl font-semibold">Unisex Black Tshirt</h1>
+                    <p class="text-xl font-bold mt-2">$99</p>
+                </div>
+                <div>
+                    <img style="width: 100%;" src="./Images/All-collections (8).jpg" alt="">
+                    <h1 class="text-2xl font-semibold">Blue Shirt</h1>
+                    <p class="text-xl font-bold mt-2">$99</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="product.js"></script>
 </body>
+
 </html>
