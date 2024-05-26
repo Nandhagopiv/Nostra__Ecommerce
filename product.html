@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Products</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
@@ -13,7 +13,8 @@
 
 <body>
     <nav class="sticky top-0 z-10 shadow-2xl">
-        <section id="off--sec" class="bg-gray-900 p-2 text-white flex justify-self-start md:justify-center items-center gap-2 relative">
+        <section id="off--sec"
+            class="bg-gray-900 p-2 text-white flex justify-self-start md:justify-center items-center gap-2 relative">
             <h1 class="font-semibold">Sign up and Get 20% Offer on your first Order</h1>
             <h1 id="x" class="font-bold m-1 mr-3 cursor-pointer text-gray-300 hover:text-white absolute right-2">X</h1>
         </section>
@@ -58,57 +59,59 @@
         <div class="w-1/4 flex-col gap-5 pt-10 pl-10 sticky lg:flex hidden top-10 shadow-2xl">
             <div class="flex flex-col gap-5">
                 <h1 class="font-bold text-4xl">Occasions</h1>
-                <div id="occasions">
-                    <table>
-                        <tr>
-                            <td class="flex gap-3"><input value="summer" type="checkbox">
-                                <P class="inline text-2xl">Summer</P>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="flex gap-3"><input value="party" type="checkbox">
-                                <P class="inline text-2xl">Party</P>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="flex gap-3"><input value="beach" type="checkbox">
-                                <p class="inline text-2xl">Beach</p>
-                            </td>
-                        </tr>
-                    </table>
+                <div>
+                    <form>
+                        <table>
+                            <tr>
+                                <td class="flex gap-3"><input value="summer" name="tickbox" type="checkbox">
+                                    <P class="inline text-2xl">Summer</P>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="flex gap-3"><input value="party" name="tickbox" type="checkbox">
+                                    <P class="inline text-2xl">Party</P>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="flex gap-3"><input value="beach" name="tickbox" type="checkbox">
+                                    <p class="inline text-2xl">Beach</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
                 </div>
             </div>
             <div class="flex flex-col gap-5">
                 <h1 class="font-bold text-4xl">Colors</h1>
-                <div id="colors">
+                <div>
                     <table>
                         <tr>
-                            <td class="flex gap-3"><input value="black" type="checkbox">
+                            <td class="flex gap-3"><input value="black" name="tickbox" type="checkbox">
                                 <P class="inline text-2xl">Black</P>
                             </td>
                         </tr>
                         <tr>
-                            <td class="flex gap-3"><input value="white" type="checkbox">
+                            <td class="flex gap-3"><input value="white" name="tickbox" type="checkbox">
                                 <P class="inline text-2xl">White</P>
                             </td>
                         </tr>
                         <tr>
-                            <td class="flex gap-3"><input value="red" type="checkbox">
+                            <td class="flex gap-3"><input value="red" name="tickbox" type="checkbox">
                                 <P class="inline text-2xl">Red</P>
                             </td>
                         </tr>
                         <tr>
-                            <td class="flex gap-3"><input value="blue" type="checkbox">
+                            <td class="flex gap-3"><input value="blue" name="tickbox" type="checkbox">
                                 <P class="inline text-2xl">Blue</P>
                             </td>
                         </tr>
                         <tr>
-                            <td class="flex gap-3"><input value="yellow" type="checkbox">
+                            <td class="flex gap-3"><input value="yellow" name="tickbox" type="checkbox">
                                 <P class="inline text-2xl">Yellow</P>
                             </td>
                         </tr>
                         <tr>
-                            <td class="flex gap-3"><input value="green" type="checkbox">
+                            <td class="flex gap-3"><input value="green" name="tickbox" type="checkbox">
                                 <P class="inline text-2xl">Green</P>
                             </td>
                         </tr>
@@ -117,15 +120,15 @@
             </div>
             <div class="flex flex-col gap-5">
                 <h1 class="font-bold text-4xl">Arrivals</h1>
-                <div id="arrivals">
+                <div>
                     <table>
                         <tr>
-                            <td class="flex gap-3"><input value="new" type="checkbox">
+                            <td class="flex gap-3"><input value="new" name="tickbox" type="checkbox">
                                 <P class="inline text-2xl">New</P>
                             </td>
                         </tr>
                         <tr>
-                            <td class="flex gap-3"><input value="old" type="checkbox">
+                            <td class="flex gap-3"><input value="old" name="tickbox" type="checkbox">
                                 <P class="inline text-2xl">Old</P>
                             </td>
                         </tr>
@@ -147,60 +150,50 @@
                 <div>
                     <img style="width: 100%;" src="./Images/All-collections (1).jpg" alt="">
                     <h1 class="text-2xl font-semibold">Olive Green Denim Jean</h1>
-                    <p class="text-xl font-bold mt-2">$99</p>
-                    <h2 class="hidden">party</h2>
-                    <h3 class="hidden">green</h3>
+                    <p class="text-xl font-bold mt-2 text-green-700">$99</p>
+                    <h2 class="hidden">party green new</h2>
                 </div>
                 <div>
                     <img style="width: 100%;" src="./Images/All-collections (2).jpg" alt="">
                     <h1 class="text-2xl font-semibold">Women Light Blue Jean</h1>
-                    <p class="text-xl font-bold mt-2">$49</p>
-                    <h2 class="hidden">party</h2>
-                    <h3 class="hidden">blue</h3>
+                    <p class="text-xl font-bold mt-2 text-green-700">$49</p>
+                    <h2 class="hidden">party blue old</h2>
                 </div>
                 <div>
                     <img style="width: 100%;" src="./Images/All-collections (3).jpg" alt="">
                     <h1 class="text-2xl font-semibold">Women Striped Pant</h1>
-                    <p class="text-xl font-bold mt-2">$69</p>
-                    <h2 class="hidden">beach</h2>
-                    <h3 class="hidden">black</h3>
+                    <p class="text-xl font-bold mt-2 text-green-700">$69</p>
+                    <h2 class="hidden">beach black new</h2>
                 </div>
                 <div>
                     <img style="width: 100%;" src="./Images/All-collections (4).jpg" alt="">
                     <h1 class="text-2xl font-semibold">Dark Blue Denim Jean</h1>
-                    <p class="text-xl font-bold mt-2">$129</p>
-                    <h2 class="hidden">party</h2>
-                    <h3 class="hidden">blue</h3>
+                    <p class="text-xl font-bold mt-2 text-green-700">$129</p>
+                    <h2 class="hidden">party blue new</h2>
                 </div>
                 <div>
                     <img style="width: 100%;" src="./Images/All-collections (5).jpg" alt="">
                     <h1 class="text-2xl font-semibold">Formal Light Blue Shirt</h1>
-                    <p class="text-xl font-bold mt-2">$149</p>
-                    <h2 class="hidden">party</h2>
-                    <h3 class="hidden">blue</h3>
+                    <p class="text-xl font-bold mt-2 text-green-700">$149</p>
+                    <h2 class="hidden">party blue old</h2>
                 </div>
                 <div>
                     <img style="width: 100%;" src="./Images/All-collections (6).jpg" alt="">
                     <h1 class="text-2xl font-semibold">Mustard Orange Full Sleeve Tshirt</h1>
-                    <p class="text-xl font-bold mt-2">$89</p>
-                    <h2 class="hidden">summer</h2>
-                    <h2 class="hidden">beach</h2>
-                    <h3 class="hidden">yellow</h3>
+                    <p class="text-xl font-bold mt-2 text-green-700">$89</p>
+                    <h2 class="hidden">summer beach yellow old</h2>
                 </div>
                 <div>
                     <img style="width: 100%;" src="./Images/All-collections (7).jpg" alt="">
                     <h1 class="text-2xl font-semibold">Unisex Black Tshirt</h1>
-                    <p class="text-xl font-bold mt-2">$99</p>
-                    <h2 class="hidden">summer</h2>
-                    <h2 class="hidden">beach</h2>
-                    <h3 class="hidden">black</h3>
+                    <p class="text-xl font-bold mt-2 text-green-700">$99</p>
+                    <h2 class="hidden">summer beach black new</h2>
                 </div>
                 <div>
                     <img style="width: 100%;" src="./Images/All-collections (8).jpg" alt="">
                     <h1 class="text-2xl font-semibold">Blue Shirt</h1>
-                    <p class="text-xl font-bold mt-2">$99</p>
-                    <h2 class="hidden">summer</h2>
-                    <h3 class="hidden">blue</h3>
+                    <p class="text-xl font-bold mt-2 text-green-700">$99</p>
+                    <h2 class="hidden">summer blue new</h2>
                 </div>
             </div>
         </div>
